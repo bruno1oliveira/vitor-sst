@@ -2,5 +2,6 @@
 profile_b64.txt
 profile_original.jpg
 *.tmp
+build_og_image.py
 .DS_Store
 Thumbs.db

@@ -8,6 +8,9 @@ Página de apresentação profissional e link-tree para Vitor Oliveira, Engenhei
 vitor-oliveira-sst/
 ├── index.html       # Página principal (HTML5 + CSS moderno responsivo)
 ├── profile.jpg      # Foto de perfil de Vitor Oliveira
+├── favicon.svg      # Ícone do site (Capacete SST em vetor)
+├── favicon.png      # Ícone do site (PNG para navegadores e mobile)
+├── og-image.jpg     # Card profissional para prévia no WhatsApp e redes
 └── README.md        # Documentação e instruções de uso
 ```
 
