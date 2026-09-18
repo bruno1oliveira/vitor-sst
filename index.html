@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitor Oliveira | Engenheiro de Segurança do Trabalho</title>
+  <meta name="description" content="Vitor Oliveira - Engenheiro de Segurança do Trabalho (CREA-SP 5070502059). Soluções em SST: PGR, LTCAT, Laudos Técnicos, Treinamentos NRs e Consultoria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #f8fafc;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(224, 242, 254, 0.5) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(240, 253, 244, 0.4) 0px, transparent 50%);
+      color: #0f2942;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 1rem 3.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Profile Header */
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #bae6fd, #e0f2fe, #bae6fd);
+      box-shadow: 0 8px 24px -4px rgba(2, 132, 199, 0.2);
+      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .avatar-wrapper:hover {
+      transform: scale(1.03);
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 50%;
+      display: block;
+      background-color: #e2e8f0;
+    }
+
+    .profile-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0b3b60;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 0.35rem;
+    }
+
+    .profile-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.01em;
+    }
+
+    .crea-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.35rem 0.95rem;
+      border-radius: 9999px;
+      letter-spacing: 0.03em;
+      border: 1px solid #bae6fd;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Bio Card */
+    .bio-card {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.25rem;
+      padding: 1.4rem 1.5rem;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #475569;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.04);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Action Buttons */
+    .actions-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .action-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.05rem 1.35rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .action-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .action-btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-content {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .btn-indicator {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      transition: transform 0.2s ease;
+    }
+
+    .action-btn:hover .btn-indicator {
+      transform: scale(1.3);
+    }
+
+    /* WhatsApp Button (Blue) */
+    .btn-whatsapp {
+      background-color: #0070f3;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 112, 243, 0.25);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #0060df;
+      box-shadow: 0 6px 20px rgba(0, 112, 243, 0.35);
+    }
+
+    .btn-whatsapp .btn-indicator {
+      background-color: #ffffff;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    }
+
+    /* LinkedIn Button (Light Mint Green) */
+    .btn-linkedin {
+      background-color: #e8f5e9;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .btn-linkedin:hover {
+      background-color: #dcfce7;
+      border-color: #86efac;
+      box-shadow: 0 4px 14px rgba(22, 101, 52, 0.12);
+    }
+
+    .btn-linkedin .btn-indicator {
+      background-color: #22c55e;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0b3b60;
+      text-align: center;
+      margin-bottom: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* Solutions Grid */
+    .solutions-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      .solutions-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .solution-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.15rem;
+      padding: 1.3rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .solution-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px -4px rgba(11, 59, 96, 0.08);
+      border-color: #bae6fd;
+    }
+
+    .icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 0.8rem;
+      background-color: #f0f9ff;
+      color: #0284c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.9rem;
+      border: 1px solid #e0f2fe;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .solution-card:hover .icon-box {
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+
+    .solution-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #0b3b60;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .solution-desc {
+      font-size: 0.83rem;
+      line-height: 1.5;
+      color: #64748b;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 2.75rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .footer a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .phone-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    
+    <!-- Profile Header -->
+    <header class="profile-section">
+      <div class="avatar-wrapper">
+        <img 
+          src="profile.jpg" 
+          alt="Foto de Vitor Oliveira" 
+          class="avatar-img"
+          loading="eager"
+        />
+      </div>
+
+      <h1 class="profile-name">Vitor Oliveira</h1>
+      <p class="profile-title">Engenheiro de Segurança do Trabalho</p>
+      
+      <div class="crea-badge">
+        <span>CREA-SP 5070502059</span>
+      </div>
+
+      <!-- Bio Card -->
+      <section class="bio-card" aria-label="Apresentação">
+        <p>
+          Atuo há mais de 8 anos com Segurança e Saúde Ocupacional, ajudando empresas a reduzirem riscos, cumprirem normas regulamentadoras e construírem ambientes de trabalho mais seguros. Especialista em prevenção de acidentes, gestão de SST e conformidade técnica.
+        </p>
+      </section>
+    </header>
+
+    <!-- Social & Contact Actions -->
+    <section class="actions-list" aria-label="Links de Contato">
+      
+      <!-- WhatsApp CTA -->
+      <a 
+        href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20em%20Seguran%C3%A7a%20do%20Trabalho." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="action-btn btn-whatsapp"
+        title="Enviar mensagem no WhatsApp"
+      >
+        <div class="btn-content">
+          <!-- WhatsApp / Chat Icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+            <path d="M8 12h.01" />
+            <path d="M12 12h.01" />
+            <path d="M16 12h.01" />
+          </svg>
+          <span>Orçamentos via WhatsApp</span>
+        </div>
+        <span class="btn-indicator" aria-hidden="true"></span>
+      </a>
+
+      <!-- LinkedIn CTA -->
+      <a 
+        href="https://www.linkedin.com/in/vitor-engineer23" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="action-btn btn-linkedin"
+        title="Ver perfil no LinkedIn"
+      >
+        <div class="btn-content">
+          <!-- LinkedIn Icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.64 1.64 0 0 0-1.64 1.64c0 .9.74 1.64 1.64 1.64.9 0 1.64-.74 1.64-1.64 0-.9-.74-1.64-1.64-1.64Z"/>
+          </svg>
+          <span>Conecte-se no LinkedIn</span>
+        </div>
+        <span class="btn-indicator" aria-hidden="true"></span>
+      </a>
+
+    </section>
+
+    <!-- Soluções em SST -->
+    <section class="solutions-section" style="width: 100%;" aria-label="Soluções em SST">
+      <h2 class="section-title">Soluções em SST</h2>
+
+      <div class="solutions-grid">
+        
+        <!-- Card 1: PGR e LTCAT -->
+        <a 
+          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20PGR%20e%20LTCAT."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="solution-card"
+        >
+          <div class="icon-box" aria-hidden="true">
+            <!-- Clipboard Check Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <path d="m9 14 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="solution-title">PGR e LTCAT</h3>
+          <p class="solution-desc">
+            Elaboração de Programa de Gerenciamento de Riscos e Laudo Técnico das Condições Ambientais do Trabalho.
+          </p>
+        </a>
+
+        <!-- Card 2: Laudos Técnicos -->
+        <a 
+          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20Laudos%20T%C3%A9cnicos."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="solution-card"
+        >
+          <div class="icon-box" aria-hidden="true">
+            <!-- File Text Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+              <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+              <path d="M10 9H8"/>
+              <path d="M16 13H8"/>
+              <path d="M16 17H8"/>
+            </svg>
+          </div>
+          <h3 class="solution-title">Laudos Técnicos</h3>
+          <p class="solution-desc">
+            Avaliações de insalubridade, periculosidade e elaboração de laudos conforme normas vigentes.
+          </p>
+        </a>
+
+        <!-- Card 3: Treinamentos NRs -->
+        <a 
+          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20Treinamentos%20de%20NRs."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="solution-card"
+        >
+          <div class="icon-box" aria-hidden="true">
+            <!-- Graduation Cap Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+              <path d="M22 10v6"/>
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+            </svg>
+          </div>
+          <h3 class="solution-title">Treinamentos NRs</h3>
+          <p class="solution-desc">
+            Capacitações normativas para sua equipe: NR-10, NR-33, NR-35, CIPA, brigada e primeiros socorros.
+          </p>
+        </a>
+
+        <!-- Card 4: Consultoria em SST -->
+        <a 
+          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20Consultoria%20em%20SST."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="solution-card"
+        >
+          <div class="icon-box" aria-hidden="true">
+            <!-- Shield Check Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="solution-title">Consultoria em SST</h3>
+          <p class="solution-desc">
+            Assessoria técnica em SST, apoio na gestão da segurança e melhoria contínua dos processos.
+          </p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="phone-hint">
+        <span>WhatsApp direto:</span>
+        <a href="https://wa.me/5512981347550" target="_blank" rel="noopener noreferrer">+55 (12) 98134-7550</a>
+      </div>
+      <p>© 2026 Vitor Oliveira • Engenharia de Segurança do Trabalho</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
