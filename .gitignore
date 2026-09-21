@@ -1,7 +1,11 @@
 # Arquivos temporários e de desenvolvimento
 profile_b64.txt
 profile_original.jpg
+WhatsApp*.jpeg
+scratch_*
 *.tmp
+__pycache__/
+*.pyc
 build_og_image.py
 .DS_Store
 Thumbs.db
