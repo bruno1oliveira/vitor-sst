@@ -19,13 +19,14 @@ vitor-oliveira-sst/
 - **Nome:** Vitor Oliveira
 - **Cargo:** Engenheiro de Segurança do Trabalho
 - **Registro:** CREA-SP 5070502059
-- **Bio Profissional:** Atuação há mais de 8 anos com SST, gestão de riscos e conformidade técnica.
+- **Bio Profissional:** Atuação há mais de 3 anos com Segurança e Saúde Ocupacional, gestão integrada de riscos e conformidade técnica.
 - **Botão WhatsApp:** Direcionado para o número `+55 12 98134-7550` com mensagem pré-definida de orçamento.
-- **Botão LinkedIn:** Perfil profissional [`vitor-engineer23`](https://www.linkedin.com/in/vitor-engineer23).
+- **Botão Envie um e-mail:** Contato direto para `vitor.engsafe@gmail.com`.
+- **Botão LinkedIn:** Perfil profissional [`vitor-engineer23`](https://www.linkedin.com/in/vitor-engineer23) estilizado em tom azul claro CREA-SP.
 - **Cards de Soluções em SST:**
   - PGR e LTCAT
-  - Laudos Técnicos (Insalubridade / Periculosidade)
-  - Treinamentos NRs (NR-10, NR-33, NR-35, CIPA, etc.)
+  - Laudos Técnicos (Insalubridade / Periculosidade / Ergonomia)
+  - Treinamento em NR’s (NR-33, NR-35, capacitações normativas)
   - Consultoria em SST
 
 ## 🚀 Como Visualizar

@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitor Oliveira | Engenheiro de Segurança do Trabalho</title>
   <meta name="title" content="Vitor Oliveira | Engenheiro de Segurança do Trabalho" />
-  <meta name="description" content="Engenheiro de Segurança do Trabalho (CREA-SP 5070502059). Soluções em SST: PGR, LTCAT, Laudos Técnicos, Treinamentos NRs e Consultoria." />
+  <meta name="description" content="Engenheiro de Segurança do Trabalho (CREA-SP 5070502059). Soluções em SST: PGR, LTCAT, Laudos Técnicos, Treinamento em NR’s e Consultoria." />
   
   <!-- Open Graph / WhatsApp / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vitor-sst.vercel.app/" />
   <meta property="og:title" content="Vitor Oliveira | Engenheiro de Segurança do Trabalho" />
-  <meta property="og:description" content="Engenheiro de SST (CREA-SP 5070502059). Especialista em PGR, LTCAT, Laudos Técnicos, Treinamentos NRs e Consultoria." />
+  <meta property="og:description" content="Engenheiro de SST (CREA-SP 5070502059). Soluções em SST: PGR, LTCAT, Laudos Técnicos, Treinamento em NR’s e Consultoria." />
   <meta property="og:image" content="https://vitor-sst.vercel.app/og-image.jpg" />
   <meta property="og:image:secure_url" content="https://vitor-sst.vercel.app/og-image.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -78,25 +78,26 @@
 
     .avatar-wrapper {
       position: relative;
-      width: 120px;
-      height: 120px;
+      width: 128px;
+      height: 128px;
       border-radius: 50%;
       padding: 4px;
       background: linear-gradient(135deg, #bae6fd, #e0f2fe, #bae6fd);
-      box-shadow: 0 8px 24px -4px rgba(2, 132, 199, 0.2);
-      margin-bottom: 1.2rem;
-      transition: transform 0.3s ease;
+      box-shadow: 0 8px 24px -4px rgba(2, 132, 199, 0.22);
+      margin-bottom: 1.25rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .avatar-wrapper:hover {
-      transform: scale(1.03);
+      transform: scale(1.04);
+      box-shadow: 0 10px 28px -4px rgba(2, 132, 199, 0.3);
     }
 
     .avatar-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center center;
+      object-position: center 20%;
       border-radius: 50%;
       display: block;
       background-color: #e2e8f0;
@@ -215,21 +216,44 @@
       box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
     }
 
-    /* LinkedIn Button (Light Mint Green) */
+    /* LinkedIn Button (Light Blue CREA-SP tone) */
     .btn-linkedin {
-      background-color: #e8f5e9;
-      color: #166534;
-      border: 1px solid #bbf7d0;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
     }
 
     .btn-linkedin:hover {
-      background-color: #dcfce7;
-      border-color: #86efac;
-      box-shadow: 0 4px 14px rgba(22, 101, 52, 0.12);
+      background-color: #bae6fd;
+      border-color: #7dd3fc;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.18);
+      color: #025381;
     }
 
     .btn-linkedin .btn-indicator {
-      background-color: #22c55e;
+      background-color: #0284c7;
+    }
+
+    /* Email Button */
+    .btn-email {
+      background-color: #ffffff;
+      color: #0f2942;
+      border: 1px solid #cbd5e1;
+    }
+
+    .btn-email:hover {
+      background-color: #f8fafc;
+      border-color: #94a3b8;
+      box-shadow: 0 4px 14px rgba(15, 41, 66, 0.08);
+      color: #0284c7;
+    }
+
+    .btn-email .btn-indicator {
+      background-color: #64748b;
+    }
+
+    .btn-email:hover .btn-indicator {
+      background-color: #0284c7;
     }
 
     /* Section Title */
@@ -316,27 +340,43 @@
       color: #94a3b8;
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
+      gap: 0.65rem;
       align-items: center;
     }
 
-    .footer a {
-      color: #0284c7;
-      text-decoration: none;
-      font-weight: 500;
+    .footer-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: #64748b;
     }
 
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    .phone-hint {
+    .footer-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.85rem;
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #0369a1;
+      text-decoration: underline;
+    }
+
+    .footer-sep {
+      color: #cbd5e1;
+    }
+
+    .footer-signature {
       color: #64748b;
-      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -348,7 +388,7 @@
     <header class="profile-section">
       <div class="avatar-wrapper">
         <img 
-          src="profile.jpg" 
+          src="profile.jpg?v=2" 
           alt="Foto de Vitor Oliveira" 
           class="avatar-img"
           loading="eager"
@@ -365,7 +405,7 @@
       <!-- Bio Card -->
       <section class="bio-card" aria-label="Apresentação">
         <p>
-          Atuo há mais de 8 anos com Segurança e Saúde Ocupacional, ajudando empresas a reduzirem riscos, cumprirem normas regulamentadoras e construírem ambientes de trabalho mais seguros. Especialista em prevenção de acidentes, gestão de SST e conformidade técnica.
+          Atuo há mais de 3 anos com Segurança e Saúde Ocupacional, ajudando empresas a reduzirem riscos, adequação as normas regulamentadoras, construir ambientes de trabalhos seguros e evitar passivos financeiros, gerindo assim a SST de forma integrada e dentro das conformidades técnicas.
         </p>
       </section>
     </header>
@@ -390,6 +430,23 @@
             <path d="M16 12h.01" />
           </svg>
           <span>Orçamentos via WhatsApp</span>
+        </div>
+        <span class="btn-indicator" aria-hidden="true"></span>
+      </a>
+
+      <!-- Email CTA -->
+      <a 
+        href="mailto:vitor.engsafe@gmail.com?subject=Contato%20via%20Site%20-%20Solu%C3%A7%C3%B5es%20em%20SST" 
+        class="action-btn btn-email"
+        title="Enviar um e-mail para Vitor Oliveira"
+      >
+        <div class="btn-content">
+          <!-- Email Icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span>Envie um e-mail</span>
         </div>
         <span class="btn-indicator" aria-hidden="true"></span>
       </a>
@@ -437,7 +494,7 @@
           </div>
           <h3 class="solution-title">PGR e LTCAT</h3>
           <p class="solution-desc">
-            Elaboração de Programa de Gerenciamento de Riscos e Laudo Técnico das Condições Ambientais do Trabalho.
+            Elaboração e gestão do Programa de Gerenciamento de Riscos e LTCAT para conformidade técnica e previdenciária.
           </p>
         </a>
 
@@ -460,13 +517,13 @@
           </div>
           <h3 class="solution-title">Laudos Técnicos</h3>
           <p class="solution-desc">
-            Avaliações de insalubridade, periculosidade e elaboração de laudos conforme normas vigentes.
+            Avaliações periciais e laudos de insalubridade, periculosidade e ergonomia com fundamentação técnica e legal.
           </p>
         </a>
 
-        <!-- Card 3: Treinamentos NRs -->
+        <!-- Card 3: Treinamento em NR’s -->
         <a 
-          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20Treinamentos%20de%20NRs."
+          href="https://wa.me/5512981347550?text=Ol%C3%A1%2C%20Vitor!%20Gostaria%20de%20saber%20mais%20sobre%20Treinamento%20em%20NRs."
           target="_blank" 
           rel="noopener noreferrer"
           class="solution-card"
@@ -479,9 +536,9 @@
               <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
             </svg>
           </div>
-          <h3 class="solution-title">Treinamentos NRs</h3>
+          <h3 class="solution-title">Treinamento em NR’s</h3>
           <p class="solution-desc">
-            Capacitações normativas para sua equipe: NR-10, NR-33, NR-35, CIPA, brigada e primeiros socorros.
+            Capacitações normativas com certificados válidos, incluindo NR-33 (Espaço Confinado), NR-35 (Altura) e afins.
           </p>
         </a>
 
@@ -501,7 +558,7 @@
           </div>
           <h3 class="solution-title">Consultoria em SST</h3>
           <p class="solution-desc">
-            Assessoria técnica em SST, apoio na gestão da segurança e melhoria contínua dos processos.
+            Gestão integrada de SST para mitigar riscos, evitar passivos trabalhistas e garantir conformidade regulatória.
           </p>
         </a>
 
@@ -510,11 +567,24 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="phone-hint">
-        <span>WhatsApp direto:</span>
-        <a href="https://wa.me/5512981347550" target="_blank" rel="noopener noreferrer">+55 (12) 98134-7550</a>
+      <div class="footer-contacts">
+        <a href="https://wa.me/5512981347550" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+            <path d="M8 12h.01" /><path d="M12 12h.01" /><path d="M16 12h.01" />
+          </svg>
+          (12) 98134-7550
+        </a>
+        <span class="footer-sep">•</span>
+        <a href="mailto:vitor.engsafe@gmail.com" class="footer-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          vitor.engsafe@gmail.com
+        </a>
       </div>
-      <p>© 2026 Vitor Oliveira • Engenharia de Segurança do Trabalho</p>
+      <p class="footer-signature">2026 - Vitor Oliveira Engenheiro de Segurança do Trabalho.</p>
     </footer>
 
   </main>
