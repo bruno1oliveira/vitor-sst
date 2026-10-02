@@ -336,46 +336,29 @@
     .footer {
       margin-top: 2.75rem;
       text-align: center;
-      font-size: 0.82rem;
-      color: #94a3b8;
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
-      align-items: center;
-    }
-
-    .footer-contacts {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 0.75rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    .footer-link {
-      display: inline-flex;
       align-items: center;
-      gap: 6px;
-      color: #0284c7;
-      text-decoration: none;
+      width: 100%;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .footer-quote {
+      font-style: italic;
+      color: #475569;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      max-width: 440px;
+      margin: 0;
+      padding: 0 0.5rem;
       font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .footer-link:hover {
-      color: #0369a1;
-      text-decoration: underline;
-    }
-
-    .footer-sep {
-      color: #cbd5e1;
     }
 
     .footer-signature {
-      color: #64748b;
-      font-size: 0.85rem;
+      color: #94a3b8;
+      font-size: 0.8rem;
       font-weight: 500;
     }
   </style>
@@ -567,23 +550,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-contacts">
-        <a href="https://wa.me/5512981347550" target="_blank" rel="noopener noreferrer" class="footer-link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-            <path d="M8 12h.01" /><path d="M12 12h.01" /><path d="M16 12h.01" />
-          </svg>
-          (12) 98134-7550
-        </a>
-        <span class="footer-sep">•</span>
-        <a href="mailto:vitor.engsafe@gmail.com" class="footer-link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect width="20" height="16" x="2" y="4" rx="2"/>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-          vitor.engsafe@gmail.com
-        </a>
-      </div>
+      <p class="footer-quote">“Segurança não é o destino, mas sim uma jornada que construímos a cada passo.”</p>
       <p class="footer-signature">2026 - Vitor Oliveira Engenheiro de Segurança do Trabalho.</p>
     </footer>
 
